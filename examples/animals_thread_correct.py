@@ -24,6 +24,7 @@ def speak(animal, printlock):
     radprint('The {0} says "{1}".'.format(animal, sound))
     printlock.release()
 
+
 def main():
     """
     Process all animals and then print a sorted list of
