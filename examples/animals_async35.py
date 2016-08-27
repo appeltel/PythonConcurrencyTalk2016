@@ -25,8 +25,7 @@ async def speak(animal):
 
 def main():
     """
-    Process all animals and then print a sorted list of
-    their sounds.
+    Retrieve and print sounds for all animals.
     """
     animals = ['cow', 'pig', 'chicken']
     tasks = []
