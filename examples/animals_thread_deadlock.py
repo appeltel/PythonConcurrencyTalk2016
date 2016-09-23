@@ -17,15 +17,19 @@ def speak(animal, printlock):
     Retrieves the sound for the given animal,
     and prints it with animation.
     """
-    response = requests.get(
+    session = requests.Session()
+    response = session.get(
         'https://ericappelt.com/animals/{0}'.format(animal)
     )
     sound = response.text
+
     printlock.acquire()
     if 'Moo' in sound:
         raise ValueError('Not happy about moo.')
     radprint('The {0} says "{1}".'.format(animal, sound))
     printlock.release()
+
+    session.close()
 
 
 def main():

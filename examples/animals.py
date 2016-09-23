@@ -3,12 +3,12 @@ import requests
 from radprint import radprint
 
 
-def speak(animal):
+def speak(animal, session):
     """
     Retrieves the sound for the given animal,
     and prints it with animation.
     """
-    response = requests.get(
+    response = session.get(
         'https://ericappelt.com/animals/{0}'.format(animal)
     )
     sound = response.text
@@ -20,9 +20,11 @@ def main():
     Retrieve and print sounds for all animals.
     """
     animals = ['cow', 'pig', 'chicken']
+    session = requests.Session()
     for animal in animals:
-        speak(animal)
+        speak(animal, session)
 
+    session.close()
 
 if __name__ == '__main__':
     main()
