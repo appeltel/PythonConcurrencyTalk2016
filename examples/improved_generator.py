@@ -1,6 +1,6 @@
 """
 Examples of generator functions using
-enhancements in PEP342 (2005) illustrating
+enhancements in PEP342 illustrating
 the yield expression and the ability to send()
 """
 
@@ -22,9 +22,11 @@ def footrace():
     """
     started = False
     while not started:
-        if (yield 'On your marks.') == 'fault':
+        status = yield 'On your marks.'
+        if status == 'fault':
             continue
-        if (yield 'Set.') == 'fault':
+        status = yield 'Set.'
+        if status == 'fault':
             continue
         yield 'Go!'
         started = True
