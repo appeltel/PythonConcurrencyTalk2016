@@ -1,9 +1,9 @@
 """
-Example of a simple generator function
+Example of a simple generator function (PEP 255)
 """
 
 
 def countdown(counter):
     while counter > 0:
         yield counter
-        counter -= 1
+        counter = counter - 1
