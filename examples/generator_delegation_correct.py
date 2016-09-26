@@ -1,8 +1,8 @@
 """
-Examples of generator functions using
-enhancements in PEP342 illustrating
-the yield expression and the ability to send()
+Example of delegation to a subgenerator using
+"yield from" syntax introduced in PEP380 (2009)
 """
+
 
 def countdown(counter):
     """
@@ -13,7 +13,10 @@ def countdown(counter):
         new_value = yield counter
         if new_value is not None:
             counter = new_value
-        counter =  counter - 1
+        counter = counter - 1
+
+    yield from footrace()
+
 
 def footrace():
     """
