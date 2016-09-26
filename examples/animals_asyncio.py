@@ -28,7 +28,7 @@ async def main():
     """
     animals = ['cow', 'pig', 'chicken']
     tasks = []
-    with aiohttp.ClientSession() as session:
+    async with aiohttp.ClientSession() as session:
         for animal in animals:
             fut = asyncio.ensure_future(speak(animal, session))
             tasks.append(fut)
