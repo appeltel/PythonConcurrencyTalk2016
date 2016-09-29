@@ -20,7 +20,7 @@ standard library. It will be assumed that the listener has a basic
 understanding of functions, classes, and exceptions in Python, but
 no prior knowledge of concurrent programming is required.
 
-### Outline
+### Outline (out of date!)
 
 - Begin with example task of retrieving animal noises from the slow
   animals API and printing them using animation. Discuss difference
@@ -57,3 +57,7 @@ no prior knowledge of concurrent programming is required.
 - Introduce new async/await syntax and the separation of coroutines
   from iterators, the meaning of "awaitable", and revise concurrent
   solution to the animals example using a "native" coroutine.
+
+### Link to Slides
+
+[presentation slides](https://www.ericappelt.com/PythonConcurrency2016.pdf)
