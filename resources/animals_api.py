@@ -11,7 +11,15 @@ FARM = {
     'cow': 'Moo!',
     'pig': 'Oink!',
     'sheep': 'Baaa!',
-    'chicken': 'Cluck!'
+    'chicken': 'Cluck!',
+    'bird': 'Tweet!',
+    'duck': 'Quack!',
+    'dog': 'Woof!',
+    'cat': 'Meow!',
+    'frog': 'Ribbit!',
+    'horse': 'Neigh!',
+    'turkey': 'Gobble-Gobble!',
+    'rooster': 'Cock-a-Doodle-Doo!'
 }
 
 
