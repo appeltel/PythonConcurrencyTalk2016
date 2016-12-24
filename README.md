@@ -3,7 +3,7 @@
 Examples, resources, slides, and outline for my python concurrency
 and coroutines talk.
 
-*Presentations of this talk*:
+**Presentations of this talk*:**
 
 This repository is organized with a release for each instance where
 the talk was given, in case anyone would like to reference the talk
@@ -17,12 +17,12 @@ version to be a better general reference.
 
 ### Title
 
-A brief introduction to concurrency and coroutines in Python 3.5
+A brief introduction to concurrency and coroutines
 
 ### Synopsis
 
 This is a beginner-friendly introduction to concurrent programming
-in Python 3.5. Using a simple example task, differences in threaded
+Using a simple example task, differences in threaded
 and cooperative approaches to concurrency will be illustrated.
 The talk will then focus on how coroutines have developed in
 Python from iteration protocol and generators to the new
