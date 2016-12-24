@@ -1,7 +1,19 @@
-# PythonConcurrencyTalk2016
+# PythonConcurrencyTalk
 
-Examples, resources, and outline for the python concurrency
-and coroutines talk 2016.
+Examples, resources, slides, and outline for my python concurrency
+and coroutines talk.
+
+*Presentations of this talk*:
+
+This repository is organized with a release for each instance where
+the talk was given, in case anyone would like to reference the talk
+as it was at that time. However, I generally consider the current
+version to be a better general reference.
+
+* [PyTennessee Conference February 4, 2017](https://www.pytennessee.org/schedule/presentation/131/) - current version
+
+* [PyNash Meetup September 29, 2016](https://www.meetup.com/PyNash/events/233675647/) - Tag: [PyNash-2016-08-29](https://github.com/appeltel/PythonConcurrencyTalk2016/tree/PyNash-2016-08-29)
+
 
 ### Title
 
