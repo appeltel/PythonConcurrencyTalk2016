@@ -27,15 +27,16 @@ async def main():
     Retrieve and print sounds for all animals.
     """
     animals = ['cow', 'pig', 'chicken']
-    tasks = []
+    coroutines = []
     async with aiohttp.ClientSession() as session:
         for animal in animals:
-            fut = asyncio.ensure_future(speak(animal, session))
-            tasks.append(fut)
+            coro = speak(animal, session)
+            coroutines.append(coro)
 
-        await asyncio.wait(tasks)
+        await asyncio.wait(coroutines)
 
 
 if __name__ == '__main__':
     loop = asyncio.get_event_loop()
     loop.run_until_complete(main())
+    loop.close()
