@@ -33,7 +33,7 @@ async def main():
             coro = speak(animal, session)
             coroutines.append(coro)
 
-        await asyncio.wait(coroutines)
+        await asyncio.gather(coroutines)
 
 
 if __name__ == '__main__':

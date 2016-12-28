@@ -17,9 +17,9 @@ def sleep(seconds):
     yield seconds
 
 
-async def example():
-    print('example: Starting example coroutine.')
+async def example(name):
+    print('{}: Starting coroutine.'.format(name))
     await sleep(0)
-    print('example: Resuming example coroutine after first await')
+    print('{}: Resuming coroutine after first await'.format(name))
     await sleep(5)
-    print('example: Resuming example coroutine after 5 second sleep')
+    print('{}: Resuming coroutine after 5 second sleep'.format(name))
