@@ -32,18 +32,15 @@ standard library. It will be assumed that the listener has a basic
 understanding of functions, classes, and exceptions in Python, but
 no prior knowledge of concurrent programming is required.
 
-### Outline (out of date!)
+### Outline as Presented 
 
-- Begin with example task of retrieving animal noises from the slow
+- Explain the difference between concurrency and parallelism using
+  the example of cooking a traditional US Thanksgiving dinner.
+
+- Motivate with example task of retrieving animal noises from the slow
   animals API and printing them using animation. Discuss difference
   between parallelism and concurrency, need for the latter in this
   situation.
-
-- Show threaded example of animals module, demonstrate need for
-  a simple Lock when performing the animation. Discuss preemptive
-  and cooperative approaches, desire as application developer
-  to control context switching, introduce idea of coroutines and
-  event loops.
 
 - Explain iteration protocol in python, `__next__` and `__iter__`
   magic methods, simple example "Countdown" Class implementing
@@ -56,20 +53,18 @@ no prior knowledge of concurrent programming is required.
   generators using results from yield expressions and the send()
   function.
 
-- Discuss need for delegation to sub-coroutines, incorrect example
-  that doesn't handle send() properly, and PEP380 yield from
+- Discuss need for delegation to sub-coroutines and PEP380 yield from
   syntax.
+
+- Introduce new async/await syntax, the separation of coroutines
+  from iterators, and the meaning of "awaitable"
 
 - Introduce the "asyncio" event loop, give simple examples of
   running on REPL.
 
-- Show solution to animals concurrency example using a generator
-  decorated with `asyncio.coroutine` and the aiohttp package.
-
-- Introduce new async/await syntax and the separation of coroutines
-  from iterators, the meaning of "awaitable", and revise concurrent
-  solution to the animals example using a "native" coroutine.
+- revise concurrent solution to the animals example using coroutines
+  and asyncio.
 
 ### Link to Slides
 
-[presentation slides](https://www.ericappelt.com/PythonConcurrency2016.pdf)
+[presentation slides](pytn17_slides.pdf)
