@@ -18,15 +18,17 @@ for mashed potatoes, and so on. One could even imagine writing the
 task of cooking Thanksgiving dinner as a python program, where each
 recipe is a function or subroutine:
 
-    def make_thanksgiving_dinner():
-        """
-        Make a delicious dinner!
-        """
-        make_roast_turkey()
-        make_mashed_potatoes()
-        make_cranberry_sauce()
-        make_apple_pie()
-        ...
+```python
+def make_thanksgiving_dinner():
+    """
+    Make a delicious dinner!
+    """
+    make_roast_turkey()
+    make_mashed_potatoes()
+    make_cranberry_sauce()
+    make_apple_pie()
+    ...
+```
 
 If someone actually cooked following such a program, they would complete
 each dish before moving on to the next one. That would mean that you
