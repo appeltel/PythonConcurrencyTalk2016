@@ -27,7 +27,6 @@ def make_thanksgiving_dinner():
     make_mashed_potatoes()
     make_cranberry_sauce()
     make_apple_pie()
-    ...
 ```
 
 If someone actually cooked following such a program, they would complete
